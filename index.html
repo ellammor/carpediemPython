@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATMAN | O Cavaleiro das Trevas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <div class="logo">BAT<span>MAN</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#historia">Dossiê</a></li>
+                <li><a href="#arsenal">Arsenal</a></li>
+                <li><a href="#viloes">Vilões</a></li>
+            </ul>
+        </nav>
+        <button id="batsinal-btn" class="btn-sinal">Ativar Bat-Sinal</button>
+    </header>
+
+    <!-- Luz do Bat-Sinal (controlada via JS) -->
+    <div id="batsinal-overlay" class="batsinal-overlay">
+        <div class="batsinal-luz">
+            <span class="morcego-icone">🦇</span>
+            <p>GOTHAM PRECISA DE VOCÊ</p>
+        </div>
+    </div>
+
+    <!-- Seção Principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>EU SOU A VINGANÇA.<br>EU SOU A NOITE.</h1>
+            <p>Nas sombras de Gotham City, o medo é a maior arma contra o crime.</p>
+            <a href="#historia" class="btn-principal">Acessar Batcomputador</a>
+        </div>
+    </section>
+
+    <!-- Seção História / Dossiê -->
+    <section id="historia" class="container">
+        <h2 class="titulo-secao">Dossiê Confidencial</h2>
+        <div class="dossie-grid">
+            <div class="dossie-texto">
+                <h3>Bruce Wayne</h3>
+                <p>Após testemunhar o assassinato de seus pais ainda criança, o bilionário Bruce Wayne jurou livrar Gotham City do mal que tirou suas vidas. Treinado no auge da perfeição física e mental, ele adotou o símbolo do morcego para espalhar o terror no coração dos criminosos.</p>
+                <ul class="status-lista">
+                    <li><strong>Base de Operações:</strong> Batcaverna, Gotham City</li>
+                    <li><strong>Especialidades:</strong> Artes marciais, detetive mestre, estrategista, tecnologia avançada</li>
+                    <li><strong>Aliados Principais:</strong> Alfred Pennyworth, Comissário Gordon, Asa Noturna</li>
+                </ul>
+            </div>
+            <div class="dossie-card">
+                <div class="terminal-header">BATCOMPUTER // STATUS: ONLINE</div>
+                <div class="terminal-body">
+                    <p>> Nível de Ameaça em Gotham: <span class="alerta">CRÍTICO</span></p>
+                    <p>> Batmóvel: <span class="ok">PRONTO PARA COMBATE</span></p>
+                    <p>> Traje Kevlar-Titânio: <span class="ok">100% ÍNTEGRO</span></p>
+                    <p>> Monitoramento Arkham: <span class="alerta">3 FUGAS DETECTADAS</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Arsenal -->
+    <section id="arsenal" class="container">
+        <h2 class="titulo-secao">Arsenal & Tecnologia</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Batarangue</h3>
+                <p>Lâminas arremessáveis de liga de titânio com aerodinâmica de precisão. Podem ser equipadas com cargas elétricas ou rastreadores.</p>
+            </div>
+            <div class="card">
+                <h3>Batmóvel</h3>
+                <p>Veículo blindado de alta velocidade equipado com pós-combustor, canhões não-letais e sistema de direção autônoma remota.</p>
+            </div>
+            <div class="card">
+                <h3>Arpéu (Grapnel Gun)</h3>
+                <p>Dispositivo magnético capaz de lançar cabos de fibra de carbono de alta resistência para escalar arranha-céus em segundos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Vilões com Filtro Interativo -->
+    <section id="viloes" class="container">
+        <h2 class="titulo-secao">Galeria de Vilões (Asilo Arkham)</h2>
+        
+        <div class="filtros">
+            <button class="filtro-btn ativo" data-vilao="coringa">Coringa</button>
+            <button class="filtro-btn" data-vilao="charada">Charada</button>
+            <button class="filtro-btn" data-vilao="bane">Bane</button>
+            <button class="filtro-btn" data-vilao="espantalho">Espantalho</button>
+        </div>
+
+        <div id="vilao-detalhes" class="vilao-box">
+            <h3 id="vilao-nome">Coringa</h3>
+            <span id="vilao-perigo" class="badge-perigo">Nível de Perigo: Extremo</span>
+            <p id="vilao-desc">O Príncipe Palhaço do Crime. Um gênio psicopata sem empatia, cuja única motivação é provar que qualquer pessoa pode enlouquecer após um dia ruim.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Arquivo Criptografado // Wayne Enterprises &copy; 2026 - Gotham City</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
